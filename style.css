@@ -1,0 +1,270 @@
+/* Estilos para o cabeçalho */
+
+body {
+  background-color: #e7dfd2;
+  /* Bege */
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cabecalho {
+    padding: 10px; /* Adapte conforme necessário */
+  }
+
+  .cabecalho-logo {
+    width: auto;
+  }
+
+  .logo {
+    font-size: 18px; /* Tamanho de fonte menor */
+    width: auto;
+  }
+
+  .navmaat {
+    flex-direction: column; /* Altera a direção da navegação para vertical */
+  }
+
+  .navmaat li {
+    display: block; /* Exibe os itens da navegação em blocos */
+    margin-right: 0; /* Remove a margem direita */
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens */
+  }
+
+  .navmaat li:last-child {
+    margin-bottom: 0; /* Remove o espaçamento inferior do último item */
+  }
+}
+
+
+.cabecalho {
+  background-color: #f0f0f0;
+}
+
+
+.cabecalho-logo {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.titulo-link {
+  color: #000080; 
+}
+
+.titulo-link.hovered {
+  color: #ff0000 !important; 
+}
+
+
+
+header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+
+.logo {
+  color: #000080;
+  width: 120px;
+  font-family: "Ojuju", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  width: 60px;
+  margin-right: 10px;
+}
+
+/* Estilos para a navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navmaat {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmaat li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navmaat li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navmaat li a:hover {
+  color: var(--button-color);
+}
+
+/* Seções */
+section {
+  color: black;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+h2 {
+  color: #000080;
+}
+
+
+section#contato {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+section#contato h2 {
+  font-size: 24px;
+  color: #000080;
+  margin-bottom: 20px;
+}
+
+section#contato p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+section#informacoes {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+section#informacoes h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  opacity: 0.1;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.maat {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.maat div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+.navmaat {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navmaat li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navmaat li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navmaat li a:hover {
+  color: var(--button-color);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
